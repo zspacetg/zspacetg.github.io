@@ -29,6 +29,20 @@ body {
 	color: #fff;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	/* Esconde o scroll horizontal */
+	margin: 0;
+	padding: 0;
+}
+
 ul,
 ol {
 	margin: 0;
@@ -1510,12 +1524,14 @@ a:focus {
 
 .comments-form .form input,
 .comments-form .form textarea {
-	border-radius: 0;
+	border-radius: 3px;
 	border: 1px solid #e0e0e0;
 	box-shadow: none;
 	margin-bottom: 20px;
 	padding: 20px;
 	background: none;
+	resize: none;
+
 }
 
 .comments-form .form textarea {
@@ -1528,10 +1544,15 @@ a:focus {
 	border-color: #c8293c;
 }
 
+button {
+	border-radius: 4px;
+}
+
 .comments-form .form .btn-submit {
 	background: #c8293c;
 	color: #fff;
 	padding: 12px 25px;
+	border-radius: 2;
 }
 
 .comments-form .form .btn-submit:hover {
